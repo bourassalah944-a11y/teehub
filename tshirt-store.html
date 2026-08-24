@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeeHub - متجر التيشيرتات العصرية | جودة عالية - شحن سريع</title>
+<meta name="description" content="تيشيرتات عصرية 100% قطن - تصاميم حصرية - شحن مجاني - الدفع عند الاستلام - 30 يوم إرجاع مجاني">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>*{font-family:'Tajawal',sans-serif} .en{font-family:'Space Grotesk',sans-serif} ::-webkit-scrollbar{width:8px} ::-webkit-scrollbar-thumb{background:#111;border-radius:8px}</style>
+</head>
+<body class="bg-[#fafaf9] text-zinc-900">
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-zinc-200">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-2"><div class="w-9 h-9 bg-black text-white grid place-items-center rounded-xl font-black">T</div><span class="font-black text-xl en">TeeHub</span></div>
+      <div class="hidden md:flex gap-6 text-sm font-bold">
+        <a href="#products" class="hover:opacity-60">المنتجات</a><a href="#why" class="hover:opacity-60">لماذا نحن</a><a href="#reviews" class="hover:opacity-60">آراء العملاء</a><a href="#faq" class="hover:opacity-60">الأسئلة</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="hidden md:block text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-bold">شحن مجاني + الدفع عند الاستلام</span>
+      <button id="cartBtn" class="relative bg-black text-white px-5 py-2.5 rounded-full font-bold flex items-center gap-2">🛒 السلة <span id="cartCount" class="bg-white text-black w-6 h-6 grid place-items-center rounded-full text-xs">0</span></button>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-4 py-10 grid lg:grid-cols-2 gap-10 items-center">
+  <div>
+    <div class="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-full text-xs font-bold">🔥 الأكثر مبيعاً في 2026 - 4.9/5 (2,341 تقييم)</div>
+    <h1 class="text-5xl md:text-6xl font-black leading-none mt-4">تيشيرتات<br><span class="bg-black text-white px-2">تتكلم</span> عنك</h1>
+    <p class="text-zinc-600 mt-4 text-lg">100% قطن عضوي - تصاميم حصرية لا تجدها في أي مكان - مقاسات من S إلى 3XL - ألوان ثابتة حتى بعد 100 غسلة</p>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="#products" class="bg-black text-white px-8 py-4 rounded-full font-black text-lg">تسوق الآن - من 89 د.م →</a>
+      <div class="flex items-center gap-2 text-sm"><div class="flex -space-x-2"><div class="w-8 h-8 rounded-full bg-zinc-300 border-2 border-white"></div><div class="w-8 h-8 rounded-full bg-zinc-400 border-2 border-white"></div><div class="w-8 h-8 rounded-full bg-zinc-500 border-2 border-white"></div></div><span class="font-bold">+1,200 عميل سعيد هذا الشهر</span></div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mt-8">
+      <div class="bg-white p-4 rounded-2xl border text-center"><div class="text-2xl">✓</div><div class="font-black text-sm">شحن 24 ساعة</div><div class="text-xs text-zinc-500">لكل المغرب</div></div>
+      <div class="bg-white p-4 rounded-2xl border text-center"><div class="text-2xl">↩</div><div class="font-black text-sm">إرجاع 30 يوم</div><div class="text-xs text-zinc-500">مجاني</div></div>
+      <div class="bg-white p-4 rounded-2xl border text-center"><div class="text-2xl">★</div><div class="font-black text-sm">4.9/5 تقييم</div><div class="text-xs text-zinc-500">2,341 رأي</div></div>
+    </div>
+  </div>
+  <div class="relative">
+    <div class="bg-white rounded-[2rem] p-6 shadow-2xl border">
+      <div class="bg-gradient-to-br from-zinc-900 to-zinc-700 rounded-3xl h-[420px] grid place-items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15),transparent_50%)]"></div>
+        <div class="text-white text-center">
+          <div class="w-48 h-64 bg-white rounded-2xl mx-auto grid place-items-center text-black font-black text-5xl shadow-xl">TEEHUB</div>
+          <div class="mt-4 text-white/80 text-sm">تيشيرت Oversized - أسود</div>
+        </div>
+        <div class="absolute top-4 left-4 bg-white text-black px-3 py-1 rounded-full text-xs font-black">خصم -30%</div>
+        <div class="absolute bottom-4 right-4 bg-black/80 backdrop-blur text-white px-3 py-2 rounded-full text-xs">مقاسات: S M L XL 2XL 3XL</div>
+      </div>
+      <div class="flex gap-2 mt-4">
+        <button class="w-10 h-10 rounded-full bg-black border-2 border-black"></button><button class="w-10 h-10 rounded-full bg-white border-2 border-zinc-300"></button><button class="w-10 h-10 rounded-full bg-blue-600"></button><button class="w-10 h-10 rounded-full bg-red-500"></button><span class="text-xs self-center mr-2 font-bold">4 ألوان</span>
+      </div>
+      <div class="flex items-center justify-between mt-4"><div><div class="line-through text-zinc-400 text-sm">129 د.م</div><div class="font-black text-2xl">89 د.م <span class="text-green-600 text-sm">وفر 40 د.م</span></div></div><button onclick="addToCart('Oversized أسود',89)" class="bg-black text-white px-6 py-3 rounded-full font-bold">أضف للسلة +</button></div>
+    </div>
+    <div class="absolute -bottom-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full font-black rotate-3 shadow-lg">شحن مجاني 🚚</div>
+  </div>
+</section>
+<!-- PRODUCTS -->
+<section id="products" class="max-w-7xl mx-auto px-4 py-10">
+  <div class="flex items-end justify-between">
+    <h2 class="text-3xl font-black">الأكثر مبيعاً</h2>
+    <div class="flex gap-2 text-xs font-bold"><button class="px-4 py-2 bg-black text-white rounded-full">الكل</button><button class="px-4 py-2 bg-white border rounded-full">رجالي</button><button class="px-4 py-2 bg-white border rounded-full">نسائي</button><button class="px-4 py-2 bg-white border rounded-full">Oversized</button></div>
+  </div>
+  <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6" id="grid"></div>
+</section>
+<!-- WHY -->
+<section id="why" class="bg-black text-white py-12 mt-4">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-black text-center">لماذا TeeHub مختلف؟</h2>
+    <div class="grid md:grid-cols-4 gap-6 mt-8">
+      <div class="bg-white/10 p-6 rounded-3xl border border-white/10"><div class="text-3xl">🧵</div><h3 class="font-black mt-2">100% قطن عضوي</h3><p class="text-white/70 text-sm mt-1">ناعم، يتنفس، لا يسبب حساسية - شهادة GOTS</p></div>
+      <div class="bg-white/10 p-6 rounded-3xl border border-white/10"><div class="text-3xl">🎨</div><h3 class="font-black mt-2">طباعة تدوم</h3><p class="text-white/70 text-sm mt-1">DTG + حبر eco - لا يتشقق بعد الغسل</p></div>
+      <div class="bg-white/10 p-6 rounded-3xl border border-white/10"><div class="text-3xl">📏</div><h3 class="font-black mt-2">مقاس مضمون</h3><p class="text-white/70 text-sm mt-1">جدول مقاسات دقيق + إرجاع مجاني لو ما ناسبك</p></div>
+      <div class="bg-white/10 p-6 rounded-3xl border border-white/10"><div class="text-3xl">⚡</div><h3 class="font-black mt-2">شحن 24س</h3><p class="text-white/70 text-sm mt-1">من الدار البيضاء لكل المغرب - تتبع مباشر</p></div>
+    </div>
+  </div>
+</section>
+<!-- REVIEWS -->
+<section id="reviews" class="max-w-7xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-black">عملاؤنا يحبوننا ★ 4.9/5</h2>
+  <div class="grid md:grid-cols-3 gap-6 mt-6">
+    <div class="bg-white p-6 rounded-3xl border"><div class="text-yellow-500">★★★★★</div><p class="mt-2 font-bold">الجودة خيالية! غسلته 5 مرات وباقي كأنه جديد. الشحن وصل في 24 ساعة للرباط.</p><div class="text-sm text-zinc-500 mt-3">— أمين، الرباط • Oversized أسود</div></div>
+    <div class="bg-white p-6 rounded-3xl border"><div class="text-yellow-500">★★★★★</div><p class="mt-2 font-bold">أفضل تيشيرت عندي. القماش بارد في الصيف والمقاس بالضبط كما في الجدول.</p><div class="text-sm text-zinc-500 mt-3">— سارة، مراكش • أبيض كلاسيك</div></div>
+    <div class="bg-white p-6 rounded-3xl border"><div class="text-yellow-500">★★★★★</div><p class="mt-2 font-bold">خدمة عملاء رائعة، بدلت المقاس مجاناً بدون أسئلة. أنصح به بقوة!</p><div class="text-sm text-zinc-500 mt-3">— يوسف، طنجة • باك 3 تيشيرتات</div></div>
+  </div>
+</section>
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-4 py-8">
+  <h2 class="text-3xl font-black text-center">الأسئلة الشائعة</h2>
+  <div class="mt-6 space-y-3">
+    <details class="bg-white p-5 rounded-2xl border"><summary class="font-black cursor-pointer">هل الدفع عند الاستلام؟</summary><p class="text-zinc-600 mt-2">نعم، الدفع عند الاستلام في كل المغرب + الدفع الإلكتروني (CMI/Wafacash) متاح.</p></details>
+    <details class="bg-white p-5 rounded-2xl border"><summary class="font-black cursor-pointer">كم مدة الشحن؟</summary><p class="text-zinc-600 mt-2">24-48 ساعة للمدن الكبرى، 72 ساعة للمناطق البعيدة. شحن مجاني فوق 300 د.م.</p></details>
+    <details class="bg-white p-5 rounded-2xl border"><summary class="font-black cursor-pointer">هل يمكن الإرجاع؟</summary><p class="text-zinc-600 mt-2">نعم، 30 يوم إرجاع مجاني حتى لو غسلته - فقط تواصل عبر واتساب.</p></details>
+  </div>
+</section>
+<!-- CTA -->
+<section class="max-w-7xl mx-auto px-4 pb-12">
+  <div class="bg-black text-white rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div><h3 class="text-3xl font-black">جاهز تطلب؟</h3><p class="text-white/70">باقي 7 قطع فقط من Oversized الأسود - العرض ينتهي الليلة</p></div>
+    <a href="#products" class="bg-white text-black px-10 py-4 rounded-full font-black text-lg">اطلب الآن - 89 د.م</a>
+  </div>
+</section>
+<footer class="border-t py-6 text-center text-xs text-zinc-500">© 2026 TeeHub - الدار البيضاء • واتساب: 06 12 34 56 78 • contact@teehub.ma</footer>
+<!-- CART DRAWER -->
+<div id="drawer" class="fixed inset-0 hidden z-50">
+  <div class="absolute inset-0 bg-black/40" onclick="closeCart()"></div>
+  <div class="absolute left-0 top-0 h-full w-[380px] max-w-[90vw] bg-white p-6 overflow-auto">
+    <div class="flex justify-between items-center"><h3 class="font-black text-xl">سلة التسوق</h3><button onclick="closeCart()" class="text-2xl">×</button></div>
+    <div id="cartItems" class="mt-6 space-y-3"></div>
+    <div class="border-t mt-6 pt-4"><div class="flex justify-between font-black text-lg"><span>المجموع</span><span id="total">0 د.م</span></div><div class="text-xs text-zinc-500 mt-1">شحن مجاني فوق 300 د.م</div>
+    <button onclick="checkout()" class="w-full bg-black text-white py-4 rounded-full font-black mt-4">إتمام الطلب عبر واتساب →</button>
+    <p class="text-xs text-center mt-2 text-zinc-500">الدفع عند الاستلام • إرجاع 30 يوم</p></div>
+  </div>
+</div>
+<script>
+const products=[
+ {name:'Oversized أسود',price:89,old:129,img:'linear-gradient(135deg,#111,#333)',badge:'خصم 30%'},
+ {name:'كلاسيك أبيض',price:79,old:99,img:'linear-gradient(135deg,#f5f5f5,#ddd)',badge:'الأكثر مبيعاً'},
+ {name:'أزرق بحري',price:89,old:129,img:'linear-gradient(135deg,#1e40af,#3b82f6)',badge:'جديد'},
+ {name:'باك 3 تيشيرتات',price:199,old:267,img:'linear-gradient(135deg,#111,#f59e0b)',badge:'وفر 68 د.م'},
+ {name:'رمادي ميلانج',price:79,old:99,img:'linear-gradient(135deg,#9ca3af,#d1d5db)',badge:''},
+ {name:'أحمر جريء',price:89,old:129,img:'linear-gradient(135deg,#dc2626,#ef4444)',badge:'محدود'},
+];
+const grid=document.getElementById('grid');
+products.forEach(p=>{
+ grid.innerHTML+=`<div class="bg-white rounded-3xl p-4 border hover:shadow-xl transition">
+  <div class="h-56 rounded-2xl grid place-items-center text-white font-black text-2xl relative overflow-hidden" style="background:${p.img}">
+   ${p.badge?`<span class="absolute top-3 right-3 bg-white text-black px-2 py-1 rounded-full text-xs font-black">${p.badge}</span>`:''}
+   <span class="bg-white/90 text-black px-4 py-2 rounded-full text-sm">TEEHUB</span>
+  </div>
+  <h3 class="font-black mt-3">${p.name}</h3>
+  <div class="flex gap-2 mt-1 text-xs"><span class="w-5 h-5 rounded-full bg-black border"></span><span class="w-5 h-5 rounded-full bg-white border"></span><span class="w-5 h-5 rounded-full bg-blue-600"></span></div>
+  <div class="flex items-center justify-between mt-3"><div><span class="line-through text-zinc-400 text-xs">${p.old} د.م</span><div class="font-black">${p.price} د.م</div></div>
+  <button onclick="addToCart('${p.name}',${p.price})" class="bg-black text-white px-5 py-2 rounded-full font-bold text-sm">أضف +</button></div>
+ </div>`;
+});
+let cart=[];
+function addToCart(name,price){let f=cart.find(i=>i.name===name); if(f)f.qty++; else cart.push({name,price,qty:1}); updateCart(); openCart();}
+function updateCart(){document.getElementById('cartCount').textContent=cart.reduce((s,i)=>s+i.qty,0);
+ let total=cart.reduce((s,i)=>s+i.price*i.qty,0); document.getElementById('total').textContent=total+' د.م';
+ let el=document.getElementById('cartItems'); el.innerHTML= cart.length? cart.map(i=>`<div class="flex justify-between items-center bg-zinc-50 p-3 rounded-2xl"><div><div class="font-bold text-sm">${i.name}</div><div class="text-xs text-zinc-500">${i.price} د.م × ${i.qty}</div></div><div class="flex gap-1"><button onclick="chg('${i.name}',-1)" class="w-7 h-7 bg-white border rounded-full">-</button><span class="w-7 grid place-items-center text-sm">${i.qty}</span><button onclick="chg('${i.name}',1)" class="w-7 h-7 bg-black text-white rounded-full">+</button></div></div>`).join('') : '<p class="text-center text-zinc-400 py-10">السلة فارغة - أضف بعض التيشيرتات!</p>';
+}
+function chg(name,d){let i=cart.find(x=>x.name===name); i.qty+=d; if(i.qty<=0) cart=cart.filter(x=>x.name!==name); updateCart();}
+function openCart(){document.getElementById('drawer').classList.remove('hidden')}
+function closeCart(){document.getElementById('drawer').classList.add('hidden')}
+document.getElementById('cartBtn').onclick=openCart;
+function checkout(){if(!cart.length) return alert('السلة فارغة'); let text=cart.map(i=>`${i.name} ×${i.qty} = ${i.price*i.qty} د.م`).join('%0A'); let total=cart.reduce((s,i)=>s+i.price*i.qty,0); let url=`https://wa.me/212612345678?text=مرحبا TeeHub! أريد طلب:%0A${text}%0Aالمجموع: ${total} د.م`; window.open(url,'_blank');}
+</script>
+</body>
+</html>

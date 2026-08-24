@@ -1,0 +1,118 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp"],
+      "enabled": true,
+      "environment": {
+        "BROWSER": "chromium"
+      }
+    },
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\salah\\OneDrive\\المستندات\\Default Project"],
+      "enabled": true
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "enabled": true,
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_TOKEN}"
+      }
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "fetch": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-fetch"],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true
+    },
+    "figma-bridge": {
+      "type": "local",
+      "command": ["npx", "-y", "figma-mcp-bridge"],
+      "enabled": true
+    },
+    "figwright": {
+      "type": "local",
+      "command": ["npx", "-y", "figwright"],
+      "enabled": true
+    },
+    "media-mcp": {
+      "type": "local",
+      "command": ["uvx", "media-mcp-server"],
+      "enabled": true
+    },
+    "ffmpeg-mcp": {
+      "type": "local",
+      "command": ["uvx", "--from", "git+https://github.com/dubnium0/ffmpeg-mcp", "ffmpeg-mcp"],
+      "enabled": true
+    },
+    "mcpscan": {
+      "type": "local",
+      "command": ["npx", "-y", "mcpscan"],
+      "enabled": true
+    }
+  },
+  "references": {
+    "open-design": {
+      "repository": "nexu-io/open-design",
+      "branch": "main",
+      "description": "Use for open-source design - 151 DESIGN.md systems, 100+ skills, 277 plugins, templates for prototypes/decks/images/video (Claude Design alternative)"
+    },
+    "open-pencil": {
+      "repository": "open-pencil/open-pencil",
+      "branch": "master",
+      "description": "Use for Figma alternative - AI-native design editor, opens .fig files, headless SDK, MCP server"
+    },
+    "shippage": {
+      "repository": "imjahanzaib/shippage",
+      "branch": "main",
+      "description": "Use for landing page creation - production-ready conversion-optimized pages, copy engine, design tokens, SEO, legal pages (React/Tailwind/shadcn, 6 frameworks, MIT free)"
+    },
+    "openpage": {
+      "repository": "buildingopen/openpage",
+      "branch": "master",
+      "description": "Use for website builder - visual drag-drop + AI generation, JSON-first, 19 blocks 42 variants, 10 themes, standalone HTML export, MIT"
+    },
+    "landforge": {
+      "repository": "monthu56/landforge",
+      "branch": "main",
+      "description": "Use for static landing pages - SEO, A/B testing, analytics, deploy, audit, MCP server, static HTML"
+    },
+    "frontend-landings": {
+      "repository": "auwalmusa/frontend-landings-claude-skill",
+      "branch": "main",
+      "description": "Use for single-file landing pages - 10 style presets, zero build, one HTML file, Tailwind+Anime.js"
+    },
+    "mcp-security-hub": {
+      "repository": "FuzzingLabs/mcp-security-hub",
+      "branch": "master",
+      "description": "Use for cybersecurity - 38 MCP servers, 300+ tools (nmap, nuclei, sqlmap, ghidra, trivy) for pentesting, Dockerized"
+    },
+    "mcpscan": {
+      "repository": "sahiloj/MCPScan",
+      "branch": "main",
+      "description": "Use for MCP security audit - detects tool poisoning, credential leaks, RCE, SSRF, 8 categories, offensive scanner"
+    },
+    "firebreak": {
+      "repository": "protonese3/Firebreak",
+      "branch": "master",
+      "description": "Use for cybersecurity - turns AI into pentester, 20 tools, 47 vuln patterns, 32 checks, Rust"
+    }
+  }
+}
